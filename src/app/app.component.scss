@@ -1,45 +1,5 @@
-.card {
-  height: 40rem;
-  width: 30rem;
-  border-radius: 10px;
-  border: 1px solid lightblue;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 1rem 2rem lightgray;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-  &__image {
-    width: 100%;
-    height: 60%;
-    transition: height 0.3s ease-in-out;
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-  }
-
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 0 2rem 4rem lightgray;
-  }
-
-  &:hover &__image {
-    height: 100%;
-  }
-
-  &__content {
-    position: absolute;
-    top: 60%;
-    border: solid 1px blue;
-    width: 100%;
-    transition: all 0.5s ease-in-out;
-  }
-
-  &:hover &__content {
-    color: white;
-    background: rgba(0, 64, 116, 0.719);
-  }
+app-card {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
