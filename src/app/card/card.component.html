@@ -1,14 +1,14 @@
 <div class="card">
   <div class="card__image">
-    <img src="assets/mountain.jpg" alt="" />
+    <img [src]="imageUrl" alt="" />
   </div>
   <div class="card__content">
     <div class="media">
-      <h2 class="media__title">Mountain hiking</h2>
-      <p class="media__subtitle">@travelry</p>
+      <h2 class="media__title">{{ title }}</h2>
+      <p class="media__subtitle">{{ username }}</p>
     </div>
     <div class="description">
-      One of the best mountain views.
+      {{ content }}
     </div>
   </div>
 </div>
