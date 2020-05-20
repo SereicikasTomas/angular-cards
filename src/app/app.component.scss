@@ -6,7 +6,8 @@
   margin: auto;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 1rem 2rem lightgray;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
   &__image {
     width: 100%;
@@ -22,6 +23,7 @@
 
   &:hover {
     transform: scale(1.1);
+    box-shadow: 0 2rem 4rem lightgray;
   }
 
   &:hover &__image {
